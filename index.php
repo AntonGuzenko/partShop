@@ -15,7 +15,7 @@ $batt = new Battery("Boch","Germany",150,10,"porche",90,40,60);
 $tireValidate = new TireValidate();
 
 if($tireValidate->getValidate($tire1)){
-    echo "Tire is VALID \n";
+    echo "Tire is VALID \n";           //// Why is not valid????!!!
 }else{
     echo "Tire is not VALID \n";
 }
