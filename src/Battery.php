@@ -16,6 +16,11 @@ class Battery extends Product
         $this->width=$width;
     }
 
+    public function getSum()
+    {
+        // TODO: Implement getSum() method.
+    }
+
 
     public function getInfo()
     {

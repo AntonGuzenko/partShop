@@ -8,5 +8,5 @@
  */
 interface iValidate
 {
-public function getValidate( $obj);
+public function getValidate(Product $obj);
 }

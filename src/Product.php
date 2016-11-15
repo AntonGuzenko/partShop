@@ -4,20 +4,22 @@
  abstract class Product
 {
 
-    private $brand = "name Brend";
-    private $seller = "name seller";
-    private $price = 0;
-    private $amount;
+    private $brand ="";
+    protected $seller ;
+    public $price =1;
+    public $amount =1;
+
+     public function __construct($brand,$seller,$price,$amount)
+     { $this->brand=$brand;
+         $this->seller=$seller;
+         $this->price=$price;
+         $this->amount=$amount;
+
+     }
+
+     abstract function getSum();
 
 
-
-    public function __construct($brand,$seller,$price,$amount)
-    { $this->brand=$brand;
-      $this->seller=$seller;
-      $this->price=$price;
-      $this->amount=$amount;
-
-    }
 
     public function getInfo()
     {

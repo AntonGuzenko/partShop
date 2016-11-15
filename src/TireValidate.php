@@ -1,16 +1,18 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Anton
- * Date: 14.11.2016
- * Time: 9:55
- */
-class TireValidate implements iValidate
+
+class TireValidate implements iValidate,iSellerValidate
 {
-    public function getValidate( $obj)
+    public function validateSeller()
     {
-        if (is_numeric($obj->price && $obj->amount)){
+        // TODO: Implement validateSeller() method.
+    }
+
+
+    public function getValidate(Product $obj)
+    {
+        if (is_numeric($obj->price) && (is_numeric($obj->amount) && (is_numeric($obj->radius))))
+            {
             return true;
 
         }else{
